@@ -3,6 +3,29 @@
 body {
     background: purple;
 }
+
+nav {
+    height: 7vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:visited {
+    color: white;
+}
+
+
+
 /* use . to declare as a class*/
 .word {
     font-family: "Agbalumo";
