@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Raleway:wght@900&display=swap');
+
+body {
+    background: purple;
+}
+/* use . to declare as a class*/
+.word {
+    font-family: "Agbalumo";
+    text-transform: uppercase;
+}
+p {
+    font-size: xx-large;
+}
+#save {
+    font-style: italic;
+    text-decoration: line-through;
+}
+.shape {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border: black 2px solid;
+    background: rgb(48 255 23 / 25%);
+border-radius: 50%;
+}
+.circle{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border: white 2px solid;
+    background: rgba(128, 128, 128, 0.767);
+    border-radius: 50%;
+    inset: 0;
+    margin: auto;
+}
+/* i have no idea*/
+.circle1{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: green 2px solid ;
+    background: rgba(255, 0, 0, 0.822);
+    border-radius: 30%;
+    rotate: 45deg;
+    inset: 0;
+    margin: auto;
+}
+.btn{
+    cursor: pointer;
+    height: 36px;
+    width: 92px;
+    border: white 2px solid;
+    background: rgb(130, 41, 41);
+    border-radius: 61px;
+    font-size: larger;
+    color: white;
+    padding: auto 10px; 
+}
