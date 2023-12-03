@@ -1,92 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Raleway:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Raleway:wght@900&display=swap");
 
 body {
-    background: purple;
+  background: purple;
 }
 
 nav {
-    height: 7vh;
-    width: 100%;
-    background-color: black;
-    position: fixed;
+  height: 7vh;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
 }
 ul {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
-    text-decoration: none;
-    text-transform: uppercase;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 a:visited {
-    color: white;
+  color: white;
 }
-
-
 
 /* use . to declare as a class*/
 .word {
-    font-family: "Agbalumo";
-    text-transform: uppercase;
+  font-family: "Agbalumo";
+  text-transform: uppercase;
 }
 p {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 #save {
-    font-style: italic;
-    text-decoration: line-through;
+  font-style: italic;
+  text-decoration: line-through;
 }
 .shape {
-    position: relative;
-    height: 100px;
-    width: 100px;
-    border: black 2px solid;
-    background: rgb(48 255 23 / 25%);
-border-radius: 50%;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border: black 2px solid;
+  background: rgb(48 255 23 / 25%);
+  border-radius: 50%;
 }
-.circle{
-    position: absolute;
-    height: 70px;
-    width: 70px;
-    border: white 2px solid;
-    background: rgba(128, 128, 128, 0.767);
-    border-radius: 50%;
-    inset: 0;
-    margin: auto;
+.circle {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border: white 2px solid;
+  background: rgba(128, 128, 128, 0.767);
+  border-radius: 50%;
+  inset: 0;
+  margin: auto;
 }
 /* i have no idea*/
-.circle1{
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    border: green 2px solid ;
-    background: rgba(255, 0, 0, 0.822);
-    border-radius: 30%;
-    rotate: 45deg;
+.circle1 {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: green 2px solid;
+  background: rgba(255, 0, 0, 0.822);
+  border-radius: 30%;
+  rotate: 45deg;
+  inset: 0;
+  margin: auto;
+}
+.btn {
+  cursor: pointer;
+  height: 36px;
+  width: 92px;
+  border: white 2px solid;
+  background: rgb(130, 41, 41);
+  border-radius: 61px;
+  font-size: larger;
+  color: white;
+  padding: auto 10px;
+}
+
+.cards {
+  top: 10vh;
+  position: absolute;
+}
+
+.red {
+  color: rgb(255, 0, 0);
+}
+
+.card {
+  position: relative;
+  height: 300px;
+  width: 200px;
+  background: wheat;
+  border: palevioletred 2px solid;
+  border-radius: 2px;
+  outline: rgb(141, 141, 4) 2px dotted;
+  outline-offset: -10px;
+  margin: 10px;
+  box-shadow: 10px 10px 5px rgba(53, 41, 0, 0.4);
+}
+.top-number {
+  position: relative;
+  left: 12px;
+  bottom: 16px;
+  transition: 1s color;
+}
+
+.card-four:hover,
+.card-three:hover {
+  color: rgb(0, 255, 76);
+}
+
+.bottom-number {
+  width: 18px;
+  height: 30px;
+  position: relative;
+  right: -169px;
+  bottom: -161px;
+  rotate: 180deg;
+}
+
+.card-four {
+position: relative;
+
+}
+
+.card-four::before {
+    content: "❤";
+    height: fit-content;
+    width: fit-content;
     inset: 0;
+    font-size: 128px;
     margin: auto;
+    position: absolute;
 }
-.btn{
-    cursor: pointer;
-    height: 36px;
-    width: 92px;
-    border: white 2px solid;
-    background: rgb(130, 41, 41);
-    border-radius: 61px;
-    font-size: larger;
-    color: white;
-    padding: auto 10px; 
+
+.card-three .bottom-number::before, .card-three .top-number::before{
+  content: "♦";
+  width: 18px;
+  height: 30px;
+  position: absolute;
+  transform: translateY(30px);
 }
-.card{
-    height: 300px;
-    width: 200px;
-    background: wheat;
-    border: palevioletred 2px solid;
-    border-radius: 2px;
-    outline: rgb(141, 141, 4) 2px dotted;
-    outline-offset: -10px;
-    margin: 10px;
-    box-shadow: 10px 10px 5px rgba(53, 41, 0, 0.4) ;
+.card-four .bottom-number::before, .card-four .top-number::before{
+  content: "❤";
+  width: 18px;
+  height: 30px;
+  position: absolute;
+  transform: translateY(30px);
+}
+
+.card-two .top-number::before {
+    content: "♣";
+    width: 18px;
+    height: 30px;
+    position: absolute;
+    transform: translateY(30px);
+  }
+
+.queen {
+  background-image: url();  
 }
