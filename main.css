@@ -122,28 +122,29 @@ p {
 }
 
 .card-four {
-position: relative;
-
+  position: relative;
 }
 
 .card-four::before {
-    content: "❤";
-    height: fit-content;
-    width: fit-content;
-    inset: 0;
-    font-size: 128px;
-    margin: auto;
-    position: absolute;
+  content: "❤";
+  height: fit-content;
+  width: fit-content;
+  inset: 0;
+  font-size: 128px;
+  margin: auto;
+  position: absolute;
 }
 
-.card-three .bottom-number::before, .card-three .top-number::before{
+.card-three .bottom-number::before,
+.card-three .top-number::before {
   content: "♦";
   width: 18px;
   height: 30px;
   position: absolute;
   transform: translateY(30px);
 }
-.card-four .bottom-number::before, .card-four .top-number::before{
+.card-four .bottom-number::before,
+.card-four .top-number::before {
   content: "❤";
   width: 18px;
   height: 30px;
@@ -152,13 +153,29 @@ position: relative;
 }
 
 .card-two .top-number::before {
-    content: "♣";
-    width: 18px;
-    height: 30px;
-    position: absolute;
-    transform: translateY(30px);
-  }
+  content: "♣";
+  width: 18px;
+  height: 30px;
+  position: absolute;
+  transform: translateY(30px);
+}
+.card-two .bottom-number::before {
+  content: "♣";
+  width: 18px;
+  height: 30px;
+  position: absolute;
+  transform: translateY(30px);
+}
+.card-two::before {
+  content: "♣";
+  height: fit-content;
+  width: fit-content;
+  inset: 0;
+  font-size: 128px;
+  margin: auto;
+  position: absolute;
+}
 
 .queen {
-  background-image: url();  
+  background-image: url();
 }
