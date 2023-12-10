@@ -123,6 +123,7 @@ p {
 
 .card-four {
   position: relative;
+  background: linear-gradient(45deg, orange,lightblue,green);
 }
 
 .card-four::before {
@@ -133,6 +134,10 @@ p {
   font-size: 128px;
   margin: auto;
   position: absolute;
+}
+
+.card-two {
+  background: radial-gradient(orange,brown);
 }
 
 .card-three .bottom-number::before,
@@ -179,3 +184,76 @@ p {
 .queen {
   background-image: url();
 }
+
+.bigbox {
+  border: 8px solid white;
+  height: 300px;
+  width: 900px;
+  position: relative;
+  top: 10vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: blueviolet;
+
+
+}
+.littlebox1, .littlebox2, .littlebox3 {
+  border:2px solid white ;
+  height: 150px;
+  width: 150px;
+
+}
+.littlebox2 {
+  background-color: beige;
+  position: relative;
+}
+.littlebox2::before {
+  content: "";
+  background-color:  black;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: auto;
+  inset: 0;
+}
+.littlebox3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.minibox {
+  border: 2px solid brown;
+  height: 25px;
+  width: 25px;
+  background-color: brown;
+  margin: 5px;
+  box-shadow: 2px 2px 3px black;
+}
+.littlebox1 {
+  display: flex;
+  background-color: green;
+  align-items: center;
+  justify-content: center;
+}
+.arrow {
+  background-color: wheat;
+  height: 30px;
+  width: 30px;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.minicircle {
+border-radius: 50%;
+}
+.star {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+
+
+
