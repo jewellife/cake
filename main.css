@@ -82,6 +82,11 @@ p {
 .cards {
   top: 10vh;
   position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .red {
@@ -171,18 +176,30 @@ p {
   position: absolute;
   transform: translateY(30px);
 }
-.card-two::before {
-  content: "♣";
-  height: fit-content;
-  width: fit-content;
-  inset: 0;
-  font-size: 99px;
-  margin: auto;
+.club1 {
+  left: 83px;
+  top: -171px; 
+  position: relative;
+  font-size: 50px;
+}
+.club2 {
+  right: 77px;
+  bottom: -46px;
+  font-size: 50px;
+  rotate: 180deg;
   position: absolute;
 }
 
 .queen {
-  background-image: url();
+  background-image: url(🃍);
+  height: fit-content;
+  width: fit-content;
+  font-size: 218px;
+  position: absolute;
+top: -221px;
+left: 29px;
+
+
 }
 
 .bigbox {
